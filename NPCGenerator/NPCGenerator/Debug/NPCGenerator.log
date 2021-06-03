@@ -1,0 +1,4 @@
+﻿  Character.cpp
+D:\C++\NPCGenerator\NPCGenerator\Character.cpp(261,6): warning C4101: 'i': unreferenced local variable
+D:\C++\NPCGenerator\NPCGenerator\Character.cpp(305,12): warning C4552: '+': result of expression not used
+  NPCGenerator.vcxproj -> D:\C++\NPCGenerator\Debug\NPCGenerator.exe
