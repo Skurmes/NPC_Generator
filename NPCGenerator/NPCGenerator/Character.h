@@ -21,6 +21,7 @@ private:
 	int modInt; //Intelligence
 	int modWis; //Wisdom
 	int modCha; //Charisma
+	//test
 
 public:
 	//Constructor
