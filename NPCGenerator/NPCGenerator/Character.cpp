@@ -266,7 +266,15 @@ void Character::printRandStats()
 	int wisRandom = rand();
 	int chaRandom = rand();
 
-	setStr((strRandom % 13) + 6); //Random number between 6-18
+	//setStr((strRandom % 13) + 6); //Random number between 6-18
+	if (Character::playableClass == "Barbarian")
+	{
+		setStr((strRandom % 13) + 9);
+	}
+	else
+	{
+		setStr((strRandom % 13) + 6);
+	}
 	setDex((dexRandom % 13) + 6); //Random number between 6-18
 	setCon((conRandom % 13) + 6); //Random number between 6-18
 	setInt((intRandom % 13) + 6); //Random number between 6-18
