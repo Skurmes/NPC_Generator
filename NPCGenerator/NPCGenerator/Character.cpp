@@ -258,14 +258,14 @@ int Character::getStats()
 
 void Character::printRandStats()
 {
-	int strRandom = 6;
+	int strRandom = rand();
 	int dexRandom = rand();
 	int conRandom = rand();
 	int intRandom = rand();
 	int wisRandom = rand();
 	int chaRandom = rand();
 
-	if (Character::getPlayClass() == "Barbarian")
+	if (Character::getPlayClass() == "Barbarian" || Character::getPlayClass() == "Fighter")
 	{
 		setStr((strRandom % 13) + 9);
 	}
