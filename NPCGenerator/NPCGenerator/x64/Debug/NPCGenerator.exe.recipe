@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\astro\Documents\GitHub\NPC_Generator\NPCGenerator\x64\Debug\NPCGenerator.exe</FullPath>
+      <FullPath>C:\Users\astro\NPC_Generator\NPCGenerator\x64\Debug\NPCGenerator.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -1,5 +1,2 @@
 ﻿  Character.cpp
-C:\Users\astro\Documents\GitHub\NPC_Generator\NPCGenerator\NPCGenerator\Character.cpp(261,6): warning C4101: 'i': unreferenced local variable
-  main.cpp
-  Generating Code...
-  NPCGenerator.vcxproj -> C:\Users\astro\Documents\GitHub\NPC_Generator\NPCGenerator\x64\Debug\NPCGenerator.exe
+  NPCGenerator.vcxproj -> C:\Users\astro\NPC_Generator\NPCGenerator\x64\Debug\NPCGenerator.exe
