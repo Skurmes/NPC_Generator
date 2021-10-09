@@ -258,15 +258,21 @@ int Character::getStats()
 
 void Character::printRandStats()
 {
-	int i;
-	int strRandom = rand();
+	int strRandom = 6;
 	int dexRandom = rand();
 	int conRandom = rand();
 	int intRandom = rand();
 	int wisRandom = rand();
 	int chaRandom = rand();
 
-	setStr((strRandom % 13) + 6); //Random number between 6-18
+	if (Character::getPlayClass() == "Barbarian")
+	{
+		setStr((strRandom % 13) + 9);
+	}
+	else 
+	{
+		setStr((strRandom % 13) + 6);
+	}
 	setDex((dexRandom % 13) + 6); //Random number between 6-18
 	setCon((conRandom % 13) + 6); //Random number between 6-18
 	setInt((intRandom % 13) + 6); //Random number between 6-18
@@ -279,21 +285,6 @@ void Character::printRandStats()
 	cout << "INT: " << getInt() << endl;
 	cout << "WIS: " << getWis() << endl;
 	cout << "CHA: " << getCha() << endl;
-
-	/*
-	I wanted to make variables private and call on a rand number but 
-	this method did not work.
-
-	int getRandNum = rand();
-	int getResults = (getRandNum % 13) + 6; //Random number between 6-18.
-	void setStats(int getResults);
-
-	cout << "\nSTR: " << getStats() << endl;
-	cout << "DEX: " << getResults << endl;
-	cout << "CON: " << getResults << endl;
-	cout << "INT: " << getResults << endl;
-	cout << "WIS: " << getResults << endl;
-	cout << "CHA: " << getResults << endl; */
 }
 
 
