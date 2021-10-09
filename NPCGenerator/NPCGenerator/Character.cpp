@@ -265,20 +265,91 @@ void Character::printRandStats()
 	int wisRandom = rand();
 	int chaRandom = rand();
 
-	if (Character::getPlayClass() == "Barbarian" || Character::getPlayClass() == "Fighter")
+	//Strength Modifier
+	if (Character::getPlayClass() == "Barbarian" && strRandom >! 21) //+3 Strength added for Barbarian.
 	{
 		setStr((strRandom % 13) + 9);
+	}
+	else if (Character::getPlayClass() == "Fighter") //+2 Strength added for Fighter. 
+	{
+		setStr((strRandom % 13) + 8);
+	}
+	else if (Character::getPlayClass() == "Paladin" || Character::getPlayClass() == "Blood Hunter") //+1 Strength added for Paladin and Blood Hunter. 
+	{
+		setStr((strRandom % 13) + 7);
 	}
 	else 
 	{
 		setStr((strRandom % 13) + 6);
 	}
-	setDex((dexRandom % 13) + 6); //Random number between 6-18
-	setCon((conRandom % 13) + 6); //Random number between 6-18
-	setInt((intRandom % 13) + 6); //Random number between 6-18
-	setWis((wisRandom % 13) + 6); //Random number between 6-18
-	setCha((chaRandom % 13) + 6); //Random number between 6-18
 
+	//Dexterity Modifier
+	
+	if (Character::getPlayClass() == "Rogue" && dexRandom >! 21) //+3 Dexterity added for Rogue.
+	{
+		setDex((dexRandom % 13) + 9);
+	}
+	else if (Character::getPlayClass() == "Fighter" || Character::getPlayClass() == "Monk" || 
+		Character::getPlayClass() == "Ranger" || Character::getPlayClass() == "Blood Hunter") //+2 Dexterity added for Fighter, Ranger, Blood Hunter, and Monk.
+	{
+		setDex((dexRandom % 13) + 8);
+	}
+	else
+	{
+		setDex((dexRandom % 13) + 6); //Random number between 6-18
+	}
+
+	//Constitution Modifier
+	setCon((conRandom % 13) + 6); //Random number between 6-18
+
+	//Intellect Modifier
+	if (Character::getPlayClass() == "Wizard" || Character::getPlayClass() == "Artificer" && intRandom >! 21) //+3 Intellect added for Wizard and Artificer.
+	{
+		setInt((intRandom % 13) + 9);
+	}
+	else if (Character::getPlayClass() == "Blood Hunter") //+1 Intellect added for Blood Hunter.
+	{
+		setInt((intRandom % 13) + 7);
+	}
+	else
+	{
+		setInt((intRandom % 13) + 6); //Random number between 6-18
+	}
+
+	//Wisdom Modifier
+	if (Character::getPlayClass() == "Cleric" || Character::getPlayClass() == "Druid" && wisRandom >! 21) //+3 Wisdom added for Cleric and Druid.
+	{
+		setWis((wisRandom % 13) + 9);
+	}
+	else if (Character::getPlayClass() == "Ranger") //+2 Wisdom added for Ranger.
+	{
+		setWis((wisRandom % 13) + 8);
+	}
+	else if (Character::getPlayClass() == "Monk") //+1 Wisdom added for Monk.
+	{
+		setWis((wisRandom % 13) + 7);
+	}
+	else
+	{
+		setWis((wisRandom % 13) + 6); //Random number between 6-18
+	}
+
+	//Charisma Modifier
+	if (Character::getPlayClass() == "Bard" || Character::getPlayClass() == "Sorcerer" 
+		|| Character::getPlayClass() == "Warlock" && chaRandom >! 21) //+3 Charisma added for Bard, Warlock, and Sorcerer.
+	{
+		setCha((chaRandom % 13) + 9);
+	}
+	else if (Character::getPlayClass() == "Paladin") //+2 Charisma added for Paladin.
+	{
+		setCha((chaRandom % 13) + 8);
+	}
+	else
+	{
+		setCha((chaRandom % 13) + 6); //Random number between 6-18
+	}
+
+	//Display call for modifiers.
 	cout << "\nSTR: " << getStr() << endl;
 	cout << "DEX: " << getDex() << endl;
 	cout << "CON: " << getCon() << endl;

@@ -1,2 +1,7 @@
 ﻿  Character.cpp
+C:\Users\astro\NPC_Generator\NPCGenerator\NPCGenerator\Character.cpp(269,50): warning C4804: '>': unsafe use of type 'bool' in operation
+C:\Users\astro\NPC_Generator\NPCGenerator\NPCGenerator\Character.cpp(288,46): warning C4804: '>': unsafe use of type 'bool' in operation
+C:\Users\astro\NPC_Generator\NPCGenerator\NPCGenerator\Character.cpp(306,91): warning C4804: '>': unsafe use of type 'bool' in operation
+C:\Users\astro\NPC_Generator\NPCGenerator\NPCGenerator\Character.cpp(320,87): warning C4804: '>': unsafe use of type 'bool' in operation
+C:\Users\astro\NPC_Generator\NPCGenerator\NPCGenerator\Character.cpp(339,48): warning C4804: '>': unsafe use of type 'bool' in operation
   NPCGenerator.vcxproj -> C:\Users\astro\NPC_Generator\NPCGenerator\x64\Debug\NPCGenerator.exe
